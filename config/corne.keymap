@@ -47,6 +47,48 @@
             bindings = <&kp LA(LG(UP_ARROW))>;
             label = "LAYOUT_MAX";
         };
+
+        desk1: desk1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(NUMBER_1)>;
+            label = "DESK1";
+        };
+
+        desk2: desk2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(NUMBER_2)>;
+            label = "DESK2";
+        };
+
+        desk3: desk3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(NUMBER_3)>;
+            label = "DESK3";
+        };
+
+        desk4: desk4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(NUMBER_4)>;
+            label = "DESK4";
+        };
+
+        desk5: desk5 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(N5)>;
+            label = "DESK5";
+        };
+
+        desk6: desk6 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(NUMBER_6)>;
+            label = "DESK6";
+        };
     };
 
     keymap {
