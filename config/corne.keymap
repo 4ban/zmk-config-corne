@@ -112,7 +112,7 @@
         };
 
         upper {
-            display-name = "RAI";
+            display-name = "SYM";
 
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BSPC |
@@ -121,15 +121,15 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TILDE  &kp N1        &kp N2  &kp N3  &kp N4    &kp N5           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH       &kp DOLLAR
-&kp GRAVE  &kp NUMBER_6  &kp N7  &kp N8  &kp N9    &kp N0           &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PERCENT      &kp CARET    &kp AMPERSAND  &kp ASTERISK
-&trans     &trans        &trans  &trans  &kp PIPE  &kp BACKSLASH    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp UNDER        &kp MINUS    &kp PLUS       &kp EQUAL
-                                 &trans  &trans    &trans           &trans                &trans                 &trans
+&kp TILDE  &kp N1           &kp N2       &kp N3    &kp N4      &kp N5           &kp N6            &kp N7             &kp N8          &kp N9                &kp N0                 &kp MINUS
+&kp GRAVE  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT      &kp CARET         &kp AMPERSAND      &kp ASTERISK    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE
+&trans     &none            &none        &none     &kp PIPE    &kp BACKSLASH    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp PLUS               &kp EQUAL
+                                         &none     &trans      &trans           &trans            &trans             &trans
             >;
         };
 
         lower {
-            display-name = "LOW";
+            display-name = "FUN";
 
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
@@ -138,20 +138,20 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5     &kp C_PLAY_PAUSE  &kp UP_ARROW    &kp C_PREVIOUS   &kp C_NEXT     &kp C_VOL_DN  &kp C_VOL_UP
-&trans  &kp F6   &kp F7   &kp F8  &kp F9  &kp F10    &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans         &trans        &kp PG_UP
-&trans  &kp F11  &kp F12  &trans  &trans  &trans     &trans            &kp C_MUTE      &layout_left     &layout_right  &layout_max   &kp PG_DN
-                          &trans  &trans  &trans     &trans            &trans          &trans
+&none   &kp F1   &kp F2   &kp F3  &kp F4  &kp F5     &kp C_PLAY_PAUSE  &kp UP_ARROW    &kp C_PREVIOUS   &kp C_NEXT     &kp C_VOL_DN  &kp C_VOL_UP
+&none   &kp F6   &kp F7   &kp F8  &kp F9  &kp F10    &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW  &none          &none         &kp PG_UP
+&trans  &kp F11  &kp F12  &none   &none   &none      &layout_max       &kp C_MUTE      &layout_left     &layout_right  &layout_max   &kp PG_DN
+                          &none   &trans  &trans     &trans            &trans          &trans
             >;
         };
 
         system {
             display-name = "SYS";
             bindings = <
-&desk1      &desk2        &desk3        &desk4        &desk5        &desk6          &bl BL_TOG       &bl BL_DEC       &bl BL_INC       &bl BL_CYCLE     &ext_power EP_ON  &ext_power EP_OFF
-&trans      &trans        &trans        &trans        &trans        &trans          &rgb_ug RGB_TOG  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_EFF  &bt BT_CLR        &bt BT_CLR_ALL
-&sys_reset  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_SPD   &rgb_ug RGB_SPI
-                                        &trans        &trans        &trans          &trans           &trans           &trans
+&desk1  &desk2        &desk3        &desk4        &desk5        &desk6          &bl BL_TOG       &bl BL_DEC       &bl BL_INC       &bl BL_CYCLE     &ext_power EP_ON  &ext_power EP_OFF
+&none   &none         &none         &none         &none         &none           &rgb_ug RGB_TOG  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_EFF  &bt BT_CLR        &bt BT_CLR_ALL
+&none   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_SPD   &rgb_ug RGB_SPI
+                                    &trans        &trans        &trans          &trans           &trans           &trans
             >;
         };
     };
