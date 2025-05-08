@@ -107,7 +107,7 @@
 &kp ESC          &mtc F1 Q          &mtc F2 W     &mtc F3 E        &mtc F4 R        &mtc F5 T    &kp Y      &kp U             &kp I             &kp O         &kp P                  &kp BACKSPACE
 &mtc LCTRL TAB   &mtc LEFT_SHIFT A  &mtc LCTRL S  &mtc LEFT_ALT D  &mtc LEFT_GUI F  &kp G        &kp H      &mtc RIGHT_GUI J  &mtc RIGHT_ALT K  &mtc RCTRL L  &mtc RIGHT_SHIFT APOS  &kp ENTER
 &mtc LSHFT CAPS  &kp Z              &kp X         &kp C            &kp V            &kp B        &kp N      &kp M             &kp COMMA         &kp DOT       &kp FSLH               &kp SEMICOLON
-                                                  &kp LEFT_GUI     &mo 1            &kp SPACE    &kp SPACE  &mo 2             &kp RALT
+                                                  &mo 1            &kp LEFT_GUI     &kp SPACE    &kp SPACE  &kp RIGHT_ALT     &mo 2
             >;
         };
 
